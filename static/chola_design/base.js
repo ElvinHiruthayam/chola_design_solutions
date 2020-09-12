@@ -32,3 +32,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function validate() {
+  var em=document.getElementById('userDetailsE').value;
+  var ph=document.getElementById('userDetailsP').value;
+  if (em && ph){
+    alert('Will Contact you shortly via Mail : ' + em + ' Or at Phone : ' + ph)
+    return true
+  }
+  if (em){
+    alert('Will Contact you shortly via Mail : ' + em)
+    return true
+  }
+  if (ph){
+    alert('Will Contact you shortly via Phone : ' + ph)
+    return true
+  }
+  return false
+}
